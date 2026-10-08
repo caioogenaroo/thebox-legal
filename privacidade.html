@@ -29,58 +29,270 @@
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #ddd; vertical-align: top; }
   @media (prefers-color-scheme: dark) { th, td { border-bottom-color: #333; } }
   th { font-weight: 600; }
+  .tabela { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 </style>
 </head>
 <body>
-
-<h1>Política de Privacidade — The Box</h1>
-<p class="atualizado">Última atualização: 17 de setembro de 2026</p>
-
-<p>Esta Política de Privacidade descreve como o aplicativo The Box ("app"), desenvolvido e operado por Alexsandra Chiorato ("nós", "controlador dos dados"), coleta, usa, armazena e protege seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
-
-<h2>1. Quais dados coletamos</h2>
-<table>
-  <tr><th>Categoria</th><th>Dados</th><th>Finalidade</th></tr>
-  <tr><td>Conta</td><td>Nome, e-mail, senha (criptografada)</td><td>Criar e autenticar sua conta</td></tr>
-  <tr><td>Dados financeiros</td><td>Valores, categorias, descrições, datas, meios de pagamento que você cadastra manualmente ou confirma a partir de um recurso automatizado</td><td>Funcionamento central do app: registro e visualização das suas finanças</td></tr>
-  <tr><td>Assinatura</td><td>Status de assinatura, histórico de compras dentro do app (processado pela Apple/RevenueCat — não vemos dados do seu cartão)</td><td>Liberar recursos pagos e validar sua assinatura</td></tr>
-  <tr><td>Dispositivo</td><td>Identificador de push notification (token), modelo/versão do sistema</td><td>Enviar notificações do app (confirmação de registro, alertas de orçamento, lembretes)</td></tr>
-</table>
-
-<h2>2. O que NÃO coletamos</h2>
-<p>Não temos acesso a senhas, saldos ou dados de login de contas bancárias. O The Box não se conecta a instituições financeiras via Open Finance ou qualquer integração bancária direta — todo dado financeiro é inserido por você, manualmente.</p>
-
-<h2>3. Como armazenamos seus dados</h2>
-<p>Seus dados financeiros ficam armazenados localmente no seu aparelho (banco de dados local) e também em nossos servidores na nuvem, através do Supabase (serviço de backend que utilizamos para autenticação e armazenamento em nuvem), para permitir sincronização entre aparelhos e recuperação de dados em caso de reinstalação.</p>
-
-<h2>4. Compartilhamento com terceiros</h2>
-<p>Não vendemos seus dados pessoais. Compartilhamos dados apenas com prestadores de serviço estritamente necessários para o funcionamento do app (operadores de dados, nos termos da LGPD):</p>
+<h1>Política de Privacidade do The Box</h1>
+<p class="atualizado">Última atualização: 8 de outubro de 2026</p>
+<p>Esta política explica quais dados pessoais o aplicativo The Box ("app") trata, por que, com quem compartilha, onde ficam guardados e como você controla tudo isso. Ela vale para todas as pessoas que usam o app, em qualquer país onde ele está disponível, e foi escrita para atender à Lei Geral de Proteção de Dados do Brasil (LGPD, Lei nº 13.709/2018), ao Regulamento Geral sobre a Proteção de Dados da União Europeia (RGPD), à lei japonesa de proteção de informações pessoais (APPI), à lei de proteção de dados pessoais de Singapura (PDPA), à lei de proteção de dados do Paraguai (Lei nº 7.593/2025) e às regras de privacidade aplicáveis nos Estados Unidos, como a lei de privacidade online da Califórnia (CalOPPA).</p>
+<p>Resumo em poucas linhas: o The Box guarda as finanças que você registra para que o app funcione e sincronize entre seus aparelhos. Não vendemos seus dados, não mostramos anúncios, não rastreamos você em outros apps ou sites e não nos conectamos ao seu banco. Comprovantes, notificações bancárias e faturas em PDF são lidos no próprio iPhone. Você pode excluir sua conta e todos os seus dados a qualquer momento, dentro do app.</p>
+<h2>1. Quem é o responsável pelos seus dados</h2>
+<p>O controlador dos dados ("responsável", "nós") é:</p>
+<p><strong>Alexsandra Chiorato</strong>, pessoa física, desenvolvedora e titular do The Box<br />
+Avenida Getúlio Vargas, 2335, condomínio (casa 1014)<br />
+Boa Vista, Roraima, 69307-700, Brasil<br />
+E-mail: <a href="mailto:alechioratoo@gmail.com">alechioratoo@gmail.com</a></p>
+<p><strong>Encarregado e canal de privacidade (LGPD) e responsável pela proteção de dados (PDPA de Singapura):</strong> Alexsandra Chiorato, pelo mesmo e-mail acima. Qualquer pedido sobre seus dados pode ser enviado para esse endereço.</p>
+<h2>2. Quais dados tratamos</h2>
+<div class="tabela"><table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Dados</th>
+<th>De onde vêm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conta</td>
+<td>Nome, e-mail e senha (guardada apenas em forma criptografada, que não permite recuperá-la). Se você entrar com a Apple: identificador da conta Apple e o e-mail que a Apple compartilhar, que pode ser um endereço de retransmissão privado</td>
+<td>Você, ao criar a conta, e a Apple, se usar "Iniciar sessão com a Apple"</td>
+</tr>
+<tr>
+<td>Dados financeiros</td>
+<td>Gastos e receitas (valor, data, descrição, categoria), contas a pagar, orçamentos, metas, carteiras e cartões cadastrados (apenas o nome que você der e os dias de fechamento e vencimento)</td>
+<td>Você, digitando ou confirmando lançamentos sugeridos pelos recursos automáticos</td>
+</tr>
+<tr>
+<td>Preferências</td>
+<td>Moeda escolhida, tema, configurações de notificações e de privacidade do app</td>
+<td>Você</td>
+</tr>
+<tr>
+<td>Assinatura</td>
+<td>Situação da assinatura, plano, datas de compra e renovação e um identificador anônimo de cliente</td>
+<td>Apple (App Store) e RevenueCat. Não recebemos nem vemos os dados do seu cartão de pagamento</td>
+</tr>
+<tr>
+<td>Técnicos</td>
+<td>Modelo do aparelho, versão do sistema e do app, registros técnicos de sincronização necessários para o serviço funcionar</td>
+<td>Seu aparelho, automaticamente</td>
+</tr>
+</tbody>
+</table></div>
+<p>Não tratamos dados pessoais sensíveis (como saúde, religião, origem racial ou biometria) e pedimos que você não os inclua nas descrições dos lançamentos.</p>
+<h2>3. O que é lido apenas no seu aparelho</h2>
+<p>Alguns recursos leem informações que podem conter dados pessoais. Toda essa leitura acontece no próprio iPhone, e só o lançamento que você confirmar é salvo no app:</p>
 <ul>
-  <li><strong>Supabase</strong> — hospedagem de banco de dados e autenticação de conta.</li>
-  <li><strong>RevenueCat</strong> — gestão de assinaturas e validação de compras.</li>
-  <li><strong>Apple (App Store)</strong> — processamento de pagamentos das assinaturas; não temos acesso aos dados do seu cartão.</li>
-  <li><strong>Apple (APNs)</strong> — entrega de notificações push do app.</li>
+<li><strong>Comprovantes de Pix e de transferência:</strong> a imagem ou o PDF que você compartilha com o app é lido no aparelho para extrair valor, data e destinatário. O arquivo não é enviado aos nossos servidores.</li>
+<li><strong>Notificações bancárias e atalhos:</strong> quando você configura uma automação no app Atalhos, o texto da notificação é repassado ao The Box no próprio aparelho para sugerir o lançamento. O app não tem acesso às suas outras notificações nem ao app do seu banco.</li>
+<li><strong>Fatura do cartão em PDF:</strong> o arquivo é lido no aparelho para conferir os lançamentos com o que já está no app. O PDF não é enviado aos nossos servidores.</li>
+<li><strong>Face ID ou Touch ID:</strong> o bloqueio por biometria é feito pelo próprio iOS. O app recebe apenas a resposta "autorizado" ou "não autorizado" e nunca tem acesso aos seus dados biométricos.</li>
+<li><strong>Widgets, Live Activity e notificações do app:</strong> são gerados e agendados no próprio aparelho a partir dos dados que já estão nele.</li>
 </ul>
-<p>Esses prestadores têm acesso apenas aos dados necessários para prestar seus respectivos serviços e estão sujeitos a obrigações de confidencialidade.</p>
-
-<h2>5. Seus direitos (LGPD)</h2>
-<p>Você pode, a qualquer momento, solicitar: confirmação da existência de tratamento de dados; acesso aos seus dados; correção de dados incompletos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários; portabilidade dos dados; eliminação dos dados tratados com seu consentimento; e revogação do consentimento.</p>
-<p>Você pode excluir sua conta e todos os dados associados diretamente pelas configurações do app, ou solicitando por e-mail (ver seção 9).</p>
-
-<h2>6. Retenção de dados</h2>
-<p>Mantemos seus dados enquanto sua conta estiver ativa. Ao excluir sua conta, seus dados são removidos dos nossos servidores, ressalvado o que a lei exigir manter por período determinado (ex: registros fiscais de pagamento, mantidos pela Apple/RevenueCat conforme suas próprias políticas).</p>
-
-<h2>7. Segurança</h2>
-<p>Adotamos medidas técnicas razoáveis para proteger seus dados, incluindo criptografia de senha e conexões seguras (HTTPS/TLS) entre o app e nossos servidores. Nenhum sistema é 100% livre de risco; caso identifique uma vulnerabilidade, entre em contato conosco.</p>
-
-<h2>8. Crianças e adolescentes</h2>
-<p>O The Box não é direcionado a menores de 18 anos e não coletamos intencionalmente dados de menores.</p>
-
-<h2>9. Alterações nesta política</h2>
-<p>Podemos atualizar esta Política de Privacidade periodicamente. Alterações relevantes serão comunicadas por aviso no app ou por e-mail.</p>
-
-<h2>10. Contato</h2>
-<p>Para exercer seus direitos ou tirar dúvidas sobre esta política, entre em contato: <a href="mailto:alechioratoo@gmail.com">alechioratoo@gmail.com</a>.</p>
-
+<h2>4. Para que usamos os dados e com qual base legal</h2>
+<div class="tabela"><table>
+<thead>
+<tr>
+<th>Finalidade</th>
+<th>Base legal no Brasil (LGPD)</th>
+<th>Base legal na UE (RGPD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Criar e manter sua conta, autenticar seu acesso</td>
+<td>Execução de contrato (art. 7º, V)</td>
+<td>Execução de contrato (art. 6º, 1, b)</td>
+</tr>
+<tr>
+<td>Registrar, calcular e exibir suas finanças, sincronizar entre aparelhos e recuperar dados após reinstalação</td>
+<td>Execução de contrato (art. 7º, V)</td>
+<td>Execução de contrato (art. 6º, 1, b)</td>
+</tr>
+<tr>
+<td>Liberar recursos pagos e validar a assinatura</td>
+<td>Execução de contrato (art. 7º, V)</td>
+<td>Execução de contrato (art. 6º, 1, b)</td>
+</tr>
+<tr>
+<td>Enviar lembretes e alertas que você ativou</td>
+<td>Consentimento (art. 7º, I), que você pode retirar desligando as notificações</td>
+<td>Consentimento (art. 6º, 1, a)</td>
+</tr>
+<tr>
+<td>Responder a pedidos de suporte e de exercício de direitos</td>
+<td>Execução de contrato e cumprimento de obrigação legal (art. 7º, II e V)</td>
+<td>Execução de contrato e obrigação legal (art. 6º, 1, b e c)</td>
+</tr>
+<tr>
+<td>Manter o serviço seguro, corrigir erros e prevenir fraudes</td>
+<td>Legítimo interesse (art. 7º, IX)</td>
+<td>Interesse legítimo (art. 6º, 1, f)</td>
+</tr>
+<tr>
+<td>Cumprir obrigações legais e responder a autoridades</td>
+<td>Obrigação legal (art. 7º, II)</td>
+<td>Obrigação legal (art. 6º, 1, c)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Informar nome, e-mail e senha é necessário para criar a conta. Sem eles, não é possível usar o app. Os demais dados são informados por você conforme o uso.</p>
+<p>Nos países onde a lei exige consentimento para tratar os dados ou transferi-los para outro país (por exemplo, Japão), ao criar a conta e usar o app você consente com esse tratamento e com essa transferência. O consentimento pode ser retirado a qualquer momento pelo e-mail de contato ou excluindo a conta.</p>
+<h2>5. O que não fazemos</h2>
+<ul>
+<li>Não vendemos nem alugamos seus dados pessoais.</li>
+<li>Não exibimos anúncios e não compartilhamos dados com anunciantes.</li>
+<li>Não rastreamos você em apps e sites de outras empresas e não usamos o identificador de publicidade do iPhone.</li>
+<li>Não nos conectamos ao seu banco, não usamos Open Finance e nunca pedimos senhas bancárias.</li>
+<li>Não tomamos decisões exclusivamente automatizadas que produzam efeitos jurídicos ou igualmente relevantes sobre você. As sugestões de categoria e os resumos do app são apenas apoio à sua organização.</li>
+<li>Não usamos seus dados financeiros para treinar modelos de inteligência artificial.</li>
+</ul>
+<h2>6. Com quem compartilhamos</h2>
+<p>Compartilhamos dados apenas com prestadores de serviço necessários para o app funcionar. Eles atuam em nosso nome (operadores ou encarregados do tratamento), apenas conforme nossas instruções e sob obrigações contratuais de confidencialidade e segurança:</p>
+<div class="tabela"><table>
+<thead>
+<tr>
+<th>Prestador</th>
+<th>O que faz</th>
+<th>Dados envolvidos</th>
+<th>Onde os dados ficam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supabase (Supabase Pte. Ltd.)</td>
+<td>Banco de dados na nuvem, autenticação e sincronização</td>
+<td>Conta, dados financeiros, preferências</td>
+<td>Servidores nos Estados Unidos (região oeste)</td>
+</tr>
+<tr>
+<td>RevenueCat</td>
+<td>Gestão e validação de assinaturas</td>
+<td>Identificador anônimo de cliente e dados da assinatura</td>
+<td>Estados Unidos</td>
+</tr>
+<tr>
+<td>Apple</td>
+<td>Pagamentos na App Store, "Iniciar sessão com a Apple" e distribuição do app</td>
+<td>Dados de compra e de login, tratados pela Apple conforme a própria política de privacidade</td>
+<td>Conforme a política da Apple</td>
+</tr>
+</tbody>
+</table></div>
+<p>Também podemos compartilhar dados quando a lei exigir, por ordem judicial ou de autoridade competente, ou para proteger direitos, sempre no limite do necessário.</p>
+<h2>7. Transferência internacional de dados</h2>
+<p>O The Box é operado a partir do Brasil, e os dados sincronizados ficam em servidores nos Estados Unidos. Isso significa que seus dados são transferidos para fora do seu país, inclusive se você mora no Brasil.</p>
+<p><strong>Como protegemos essas transferências:</strong></p>
+<ul>
+<li><strong>Cláusulas contratuais padrão:</strong> o contrato de tratamento de dados da Supabase incorpora as cláusulas contratuais padrão aprovadas pela Comissão Europeia (Decisão de Execução (UE) 2021/914), que impõem ao prestador obrigações equivalentes às do RGPD.</li>
+<li><strong>Garantias contratuais com cada prestador</strong>, que só podem tratar os dados para prestar o serviço contratado.</li>
+<li><strong>Medidas técnicas</strong>, como criptografia na transmissão e controle de acesso por usuário no banco de dados (ver seção 11).</li>
+</ul>
+<p><strong>Informações exigidas pela lei japonesa (APPI) para quem mora no Japão:</strong></p>
+<ul>
+<li><strong>Países de destino:</strong> Brasil (onde o app é operado), Estados Unidos (servidores da Supabase e da RevenueCat) e Singapura (sede da Supabase Pte. Ltd.).</li>
+<li><strong>Sistemas de proteção de dados desses países:</strong> o Brasil tem uma lei geral de proteção de dados (LGPD) fiscalizada pela Autoridade Nacional de Proteção de Dados (ANPD). Os Estados Unidos não têm uma lei federal geral de proteção de dados: a proteção vem de leis setoriais e estaduais, como as da Califórnia, e o acesso de autoridades a dados pode ser mais amplo do que no Japão. Singapura tem uma lei geral (PDPA) fiscalizada pela Personal Data Protection Commission.</li>
+<li><strong>Medidas tomadas pelos destinatários:</strong> obrigações contratuais de confidencialidade, limitação de uso à prestação do serviço, criptografia na transmissão, controle de acesso e notificação de incidentes.</li>
+</ul>
+<p>Ao criar a conta e usar o app, você consente com essas transferências nos países onde a lei exige consentimento.</p>
+<h2>8. Por quanto tempo guardamos</h2>
+<ul>
+<li><strong>Enquanto sua conta existir</strong>, guardamos seus dados para prestar o serviço.</li>
+<li><strong>Ao excluir a conta</strong>, seus dados são apagados dos nossos servidores imediatamente, e as cópias de segurança são eliminadas em até 30 dias.</li>
+<li><strong>Dados no aparelho</strong> ficam no seu iPhone até você excluir a conta ou apagar o app.</li>
+<li><strong>Registros de compra da assinatura</strong> são mantidos pela Apple e pela RevenueCat pelo prazo que suas próprias políticas e a lei exigirem.</li>
+<li>Podemos manter dados pelo tempo necessário para cumprir uma obrigação legal ou nos defender em processos, apenas para essa finalidade.</li>
+</ul>
+<h2>9. Seus direitos</h2>
+<p>Você pode, a qualquer momento e sem custo:</p>
+<ul>
+<li><strong>Confirmar</strong> se tratamos seus dados e <strong>acessar</strong> uma cópia deles.</li>
+<li><strong>Corrigir</strong> dados incompletos, inexatos ou desatualizados. A maior parte pode ser editada no próprio app.</li>
+<li><strong>Excluir</strong> seus dados, pelo app ou por e-mail.</li>
+<li><strong>Receber seus dados em formato estruturado</strong> e levá-los para outro serviço (portabilidade).</li>
+<li><strong>Retirar o consentimento</strong> que tiver dado, sem afetar o que foi feito antes.</li>
+<li><strong>Se opor</strong> a um tratamento baseado em interesse legítimo e pedir a <strong>limitação</strong> do tratamento enquanto um pedido seu é analisado.</li>
+<li><strong>Saber com quem</strong> compartilhamos seus dados e as consequências de não fornecer algum dado.</li>
+<li><strong>Reclamar</strong> a uma autoridade de proteção de dados (lista na seção 14).</li>
+</ul>
+<p><strong>Direitos específicos por país:</strong></p>
+<ul>
+<li><strong>Brasil:</strong> os direitos do artigo 18 da LGPD, incluindo anonimização, bloqueio ou eliminação de dados desnecessários e informação sobre a possibilidade de não consentir.</li>
+<li><strong>União Europeia:</strong> os direitos dos artigos 15 a 22 do RGPD (acesso, retificação, apagamento, limitação, portabilidade e oposição).</li>
+<li><strong>Japão:</strong> pedir a divulgação, correção, suspensão do uso, exclusão e interrupção da transferência para terceiros, inclusive no exterior, e receber informações sobre as medidas de proteção adotadas pelos destinatários no exterior.</li>
+<li><strong>Singapura:</strong> pedir acesso e correção dos dados e retirar o consentimento.</li>
+<li><strong>Paraguai:</strong> os direitos de acesso, retificação, oposição, supressão e portabilidade da Lei nº 7.593/2025, que passa a valer integralmente em novembro de 2027. Já os garantimos desde agora.</li>
+<li><strong>Estados Unidos (Califórnia):</strong> você pode revisar e corrigir seus dados no app ou pedir por e-mail. Não vendemos nem compartilhamos dados pessoais para publicidade comportamental.</li>
+</ul>
+<p><strong>Como exercer:</strong> envie um e-mail para <a href="mailto:alechioratoo@gmail.com">alechioratoo@gmail.com</a> a partir do e-mail cadastrado na conta, dizendo o que deseja. Podemos pedir uma confirmação de identidade para proteger seus dados. Respondemos em até 15 dias, prazo da LGPD, e nunca em mais de 30 dias, salvo quando a lei permitir prorrogação, caso em que avisaremos o motivo.</p>
+<h2>10. Exclusão da conta</h2>
+<p>Você pode excluir sua conta e todos os seus dados diretamente no app, em <strong>Config → Excluir conta</strong>. A exclusão remove seus dados dos nossos servidores e do aparelho. Ela não cancela automaticamente a assinatura na App Store: para isso, cancele em Ajustes do iPhone → seu nome → Assinaturas.</p>
+<h2>11. Segurança</h2>
+<p>Adotamos medidas técnicas e organizacionais adequadas ao tipo de dado que tratamos, entre elas:</p>
+<ul>
+<li>Conexões criptografadas (HTTPS/TLS) entre o app e os servidores.</li>
+<li>Senhas guardadas apenas em forma criptografada.</li>
+<li>Regras de acesso no banco de dados que permitem a cada conta ler e alterar somente os próprios dados.</li>
+<li>Bloqueio opcional do app por Face ID ou Touch ID.</li>
+<li>Acesso administrativo aos sistemas restrito à responsável pelo app.</li>
+</ul>
+<p>Nenhum sistema é totalmente imune a falhas. Se você identificar uma vulnerabilidade, escreva para o e-mail de contato.</p>
+<h2>12. Incidentes de segurança</h2>
+<p>Se acontecer um incidente de segurança que possa causar risco ou dano relevante a você, comunicaremos as autoridades competentes e as pessoas afetadas nos prazos exigidos pela lei de cada país, como os previstos na LGPD, no RGPD (em até 72 horas para a autoridade) e nas leis do Japão e de Singapura.</p>
+<h2>13. Menores de idade</h2>
+<p>O The Box é destinado a pessoas com 18 anos ou mais e não é direcionado a crianças ou adolescentes. Não tratamos intencionalmente dados de menores. Se soubermos que uma conta pertence a um menor, ela será excluída.</p>
+<h2>14. Autoridades de proteção de dados</h2>
+<p>Você pode falar primeiro conosco, mas tem o direito de reclamar diretamente à autoridade do seu país:</p>
+<div class="tabela"><table>
+<thead>
+<tr>
+<th>País</th>
+<th>Autoridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brasil</td>
+<td>Autoridade Nacional de Proteção de Dados (ANPD)</td>
+</tr>
+<tr>
+<td>Portugal</td>
+<td>Comissão Nacional de Proteção de Dados (CNPD)</td>
+</tr>
+<tr>
+<td>Espanha</td>
+<td>Agencia Española de Protección de Datos (AEPD)</td>
+</tr>
+<tr>
+<td>Irlanda</td>
+<td>Data Protection Commission (DPC)</td>
+</tr>
+<tr>
+<td>Japão</td>
+<td>Personal Information Protection Commission (PPC)</td>
+</tr>
+<tr>
+<td>Singapura</td>
+<td>Personal Data Protection Commission (PDPC)</td>
+</tr>
+<tr>
+<td>Paraguai</td>
+<td>Agencia Nacional de Protección de Datos Personales (ANPDP), a partir da sua instalação</td>
+</tr>
+<tr>
+<td>Estados Unidos (Califórnia)</td>
+<td>California Privacy Protection Agency e Procuradoria-Geral da Califórnia</td>
+</tr>
+</tbody>
+</table></div>
+<h2>15. Sinais de "não rastrear"</h2>
+<p>Como o The Box não rastreia você em sites ou apps de terceiros, não há rastreamento a ser interrompido por sinais de "Do Not Track" ou semelhantes. O app trata os dados apenas para as finalidades descritas nesta política.</p>
+<h2>16. Alterações nesta política</h2>
+<p>Podemos atualizar esta política para refletir mudanças no app ou na lei. A data de atualização fica no topo. Mudanças relevantes serão avisadas no app ou por e-mail antes de entrarem em vigor e, quando a lei exigir, pediremos um novo consentimento.</p>
+<h2>17. Contato</h2>
+<p>Para dúvidas, pedidos ou reclamações sobre privacidade: <strong><a href="mailto:alechioratoo@gmail.com">alechioratoo@gmail.com</a></strong></p>
+<p>Alexsandra Chiorato, Boa Vista, Roraima, Brasil</p>
 </body>
 </html>
